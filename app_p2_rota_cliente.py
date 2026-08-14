@@ -22,7 +22,7 @@ def cadastrar_cliente():
     return jsonify({"message": "Cliente cadastrado com sucesso!"}), 201
 
 
-# EXCLUSÃO DE PROFISSIONAL
+# EXCLUSÃO DE CLIENTE
 
 @app.route('/api/cliente/<int:id_cliente>', methods=['DELETE'])
 
@@ -55,6 +55,8 @@ def atualizar_cliente(id_cliente):
 
     return jsonify({"message": "Cliente atualizado com sucesso!"}), 200
 
+
+# ROTA DE BUSCA DE CLIENTES COM FILTRO
 
 @app.route('/api/cliente', methods=['GET'])
 def buscar_clientes():
