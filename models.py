@@ -1,11 +1,11 @@
 class Profissional:
-    def __init__(self, id_profissional, nome, cpf, telefone, email, cargp, especialidade, status):
+    def __init__(self, id_profissional, nome, cpf, telefone, email, cargo, especialidade, status):
         self.id_profissional = id_profissional
         self.nome = nome
         self.cpf = cpf
         self.telefone = telefone
         self.email = email
-        self.cargp = cargp
+        self.cargo = cargo
         self.especialidade = especialidade
         self.status = status
 
